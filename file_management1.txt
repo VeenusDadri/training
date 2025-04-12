@@ -1,0 +1,2 @@
+Trying to create a new file.
+This is done in writing mode.

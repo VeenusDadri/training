@@ -1,0 +1,5 @@
+Adding new data to an existing file. 
+This is done in writing mode.
+Appending new data to an existing file. 
+This is done in appending mode.
+This is the end of this file.

@@ -1,0 +1,1 @@
+file1= open("C:/Users/krish/OneDrive/Desktop/python/file_management.txt",'w')

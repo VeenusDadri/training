@@ -5,4 +5,6 @@ India={
 
     
 for key,value in India.items():
-    print(f"Cities in {key} are: {value}")
+    print(f"\nCities in {key} are:")
+    for v in value:
+        print(v)
