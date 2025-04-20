@@ -31,10 +31,11 @@ print(f"vegetables with price greater than 3:{expensive_vegetables}")
 
 #example4
 from datetime import datetime
+
 products = [
-    {"name":"Milk","expiry":"2025-01-05"}
-    {"name":"cheese","expiry":"2025-02-2"}
-    {"name":"butter","expiry":"2025-01-25"}
+    {"name":"Milk","expiry":"25-01-05"},
+    {"name":"cheese","expiry":"25-02-02"},
+    {"name":"butter","expiry":"25-06-25"}
 ]
 today=datetime.now().strftime('%y-%m-%d')
 expired_products =list(filter(lambda x:x['expiry']<today,products))
