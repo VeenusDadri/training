@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNY5uUXFDN3is0VomDDg2C5",
+      "authorship_tag": "ABX9TyNuyvK+l1hXUgn0M7JI5mxe",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -34,12 +34,12 @@
       "metadata": {
         "id": "dQgwHV6P7P60"
       },
-      "execution_count": 2,
+      "execution_count": 7,
       "outputs": []
     },
     {
       "cell_type": "code",
-      "execution_count": 1,
+      "execution_count": 8,
       "metadata": {
         "id": "ASiqYm0n6k6L"
       },
@@ -60,9 +60,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "yu1lRJx77Y2K",
-        "outputId": "2c10c193-8de4-4080-af5f-6d3ce8b0aec1"
+        "outputId": "3e9dc6ce-831d-4240-f05a-9c70c44e589a"
       },
-      "execution_count": 3,
+      "execution_count": 9,
       "outputs": [
         {
           "output_type": "stream",
@@ -81,8 +81,62 @@
       "metadata": {
         "id": "fk15FB7o7rAK"
       },
-      "execution_count": 4,
+      "execution_count": 10,
       "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df.printSchema()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BWpbhQbJ8OIR",
+        "outputId": "3a791c5d-1110-4e80-ba39-56ccbbc4904a"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "root\n",
+            " |-- Country Name: string (nullable = true)\n",
+            " |-- Country Code: string (nullable = true)\n",
+            " |-- Year: string (nullable = true)\n",
+            " |-- Value: string (nullable = true)\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df.count()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jQSPGmMmER7N",
+        "outputId": "99945f14-0065-4d57-89be-e38a3a4a5d15"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "16930"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
     }
   ]
 }
