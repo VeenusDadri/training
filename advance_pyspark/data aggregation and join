@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMOBHUvLp37wirXx+W6Vuxd",
+      "authorship_tag": "ABX9TyNafb+8YcJEmsUyn75+Sz++",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,16 +28,12 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 1,
+      "execution_count": null,
       "metadata": {
-        "id": "hF8r6YmC28HN"
+        "id": "ASiqYm0n6k6L"
       },
       "outputs": [],
-      "source": [
-        "from pyspark.sql import SparkSession\n",
-        "spark = SparkSession.builder.appName('Spark Training').getOrCreate()\n",
-        "sc = spark.sparkContext"
-      ]
+      "source": []
     }
   ]
 }
