@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNafb+8YcJEmsUyn75+Sz++",
+      "authorship_tag": "ABX9TyNY5uUXFDN3is0VomDDg2C5",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,12 +28,61 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "source": [
+        "import os"
+      ],
+      "metadata": {
+        "id": "dQgwHV6P7P60"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
       "metadata": {
         "id": "ASiqYm0n6k6L"
       },
       "outputs": [],
-      "source": []
+      "source": [
+        "from pyspark.sql import SparkSession\n",
+        "spark = SparkSession.builder.appName('Spark Training').getOrCreate()\n",
+        "sc = spark.sparkContext"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(os.path.exists(\"/content/population.csv\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yu1lRJx77Y2K",
+        "outputId": "2c10c193-8de4-4080-af5f-6d3ce8b0aec1"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df = spark.read.format('csv').options(delimiter=',', header=True).load('/content/population.csv')"
+      ],
+      "metadata": {
+        "id": "fk15FB7o7rAK"
+      },
+      "execution_count": 4,
+      "outputs": []
     }
   ]
 }
