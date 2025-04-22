@@ -1,0 +1,43 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMOBHUvLp37wirXx+W6Vuxd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/VeenusDadri/training/blob/master/advance_pyspark/data%20aggregation%20and%20join\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "hF8r6YmC28HN"
+      },
+      "outputs": [],
+      "source": [
+        "from pyspark.sql import SparkSession\n",
+        "spark = SparkSession.builder.appName('Spark Training').getOrCreate()\n",
+        "sc = spark.sparkContext"
+      ]
+    }
+  ]
+}
