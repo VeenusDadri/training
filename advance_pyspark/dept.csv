@@ -1,0 +1,8 @@
+﻿department_id,department_name,city,country,budget
+101,Sales,NYC,US,1000000
+102,Marketing,LA,US,900000
+103,Finance,London,UK,1200000
+104,Engineering,Beijing,China,1500000
+105,Human Resources,Tokyo,Japan,800000
+106,Research and Development,Perth,Australia,1100000
+107,Customer Service,Sydney,Australia,950000
